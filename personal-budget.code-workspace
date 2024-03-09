@@ -1,0 +1,48 @@
+{
+  "folders": [
+    {
+      "name": "🌎 root",
+      "path": "./",
+    },
+    {
+      "name": "🔄 @/api",
+      "path": "./app/api",
+    },
+    {
+      "name": "📢 @/public",
+      "path": "./public",
+    },
+    {
+      "name": "📱 @/app",
+      "path": "./app",
+    },
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "**/node_modules": true,
+    },
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Dev",
+        "type": "shell",
+        "command": "npm run dev",
+        "problemMatcher": [],
+      },
+      {
+        "label": "Database",
+        "type": "shell",
+        "command": "cd database && ./pocketbase serve",
+        "problemMatcher": [],
+      },
+    ],
+  },
+}
